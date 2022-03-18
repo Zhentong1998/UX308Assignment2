@@ -64,52 +64,52 @@ body, h1, h2, h3, h4, h5, h6, p, pre, blockquote, dl, dt, dd, ul, ol, li, form, 
 	background: #1784db;
 	color: #fff;
 }
-.projects .rightBorder .cont::-webkit-scrollbar {/*Overall style of the scroll bar*/
+.projects .rightboard .cont::-webkit-scrollbar {/*Overall style of the scroll bar*/
     width: 10px;     /*The height and width correspond to the size of the horizontal and vertical scroll bars*/
     height: 1px;
 }
-.projects .rightBorder .cont::-webkit-scrollbar-thumb {/*Small squares inside the scroll bar*/
+.projects .rightboard .cont::-webkit-scrollbar-thumb {/*Small squares inside the scroll bar*/
         border-radius: 10px;
 background-color: silver;
 background-image: -webkit-linear-gradient(45deg, rgba(255, 255, 255, .2) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, .2) 50%, 
 rgba(255, 255, 255, .2) 75%, transparent 75%, transparent);
     }
-.projects .rightBorder .cont::-webkit-scrollbar-track {/*Track inside scroll bar*/
+.projects .rightboard .cont::-webkit-scrollbar-track {/*Track inside scroll bar*/
         /*-webkit-box-shadow: inset 0 0 5px rgba(0,0,0,0.2);*/
         /*border-radius: 10px;*/
         background: #EDEDED;
     }
-	.projects2 .rightBorder .cont::-webkit-scrollbar {/*Overall style of the scroll bar*/
+	.projects2 .rightboard .cont::-webkit-scrollbar {/*Overall style of the scroll bar*/
 		width: 10px;     /*The height and width correspond to the size of the horizontal and vertical scroll bars*/
 		height: 1px;
 	}
-	.projects2 .rightBorder .cont::-webkit-scrollbar-thumb {/*Small squares inside the scroll bar*/
+	.projects2 .rightboard .cont::-webkit-scrollbar-thumb {/*Small squares inside the scroll bar*/
 			border-radius: 10px;
 	background-color: silver;
 	background-image: -webkit-linear-gradient(45deg, rgba(255, 255, 255, .2) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, .2) 50%, 
 	rgba(255, 255, 255, .2) 75%, transparent 75%, transparent);
 		}
-	.projects2 .rightBorder .cont::-webkit-scrollbar-track {/*Track inside scroll bar*/
+	.projects2 .rightboard .cont::-webkit-scrollbar-track {/*Track inside scroll bar*/
 			/*-webkit-box-shadow: inset 0 0 5px rgba(0,0,0,0.2);*/
 			/*border-radius: 10px;*/
 			background: #EDEDED;
 		}
-.left .leftBorder li.border1{height:60px;  width: 110px;position:relative;  display:block;padding:85px 0 0 100px;}
-.left .leftBorder li.border2{height:50px;  width: 110px;  display:block;padding:30px 0 0 100px;}
-.left .leftBorder li.border3{height:50px;  width: 110px;  display:block;padding:20px 0 0 100px;}
-.left .leftBorder li.border3clicked a{color: black; display:block;font-size:16px;color:rgb(0, 225, 255);position: relative;}
-.left .leftBorder li.border3clicked{height:50px;  width: 110px;  display:block;padding:20px 0 0 100px;}
-.left .leftBorder li.border4{height:50px;  width: 110px;  display:block;padding:20px 0 0 100px;}
-.left .leftBorder li.border4clicked{height:50px;  width: 110px;  display:block;padding:20px 0 0 100px;}
-.left .leftBorder li.border4clicked a{color: black; display:block;font-size:16px;color:rgb(0, 225, 255);position: relative;}
-.left .leftBorder li.border5{height:50px;  width: 110px;  display:block;padding:20px 0 0 100px;}
-.left .leftBorder li.border5clicked{height:50px;  width: 110px;  display:block;padding:20px 0 0 100px;}
-.left .leftBorder li.border5clicked a{color: black; display:block;font-size:16px;color:rgb(0, 225, 255);position: relative;}
-.left .leftBorder li.border2clicked{height:50px;  width: 110px;  display:block;padding:30px 0 0 100px;}
-.left .leftBorder li a{color: black; display:block;font-size:16px;position: relative;}
-.left .leftBorder li.border2clicked a{color: black; display:block;font-size:16px;color:rgb(0, 225, 255);position: relative;}
-.left .leftBorder li.border1 .inner{color:grey; display:block;font-size:12px;position: relative;}
-.left .leftBorder li.border1 .inner:hover{ border:none; color:#ff4500; text-decoration: none;}
+.left .leftboard li.border1{height:60px;  width: 110px;position:relative;  display:block;padding:85px 0 0 100px;}
+.left .leftboard li.border2{height:50px;  width: 110px;  display:block;padding:30px 0 0 100px;}
+.left .leftboard li.border3{height:50px;  width: 110px;  display:block;padding:20px 0 0 100px;}
+.left .leftboard li.border3clicked a{color: black; display:block;font-size:16px;color:rgb(0, 225, 255);position: relative;}
+.left .leftboard li.border3clicked{height:50px;  width: 110px;  display:block;padding:20px 0 0 100px;}
+.left .leftboard li.border4{height:50px;  width: 110px;  display:block;padding:20px 0 0 100px;}
+.left .leftboard li.border4clicked{height:50px;  width: 110px;  display:block;padding:20px 0 0 100px;}
+.left .leftboard li.border4clicked a{color: black; display:block;font-size:16px;color:rgb(0, 225, 255);position: relative;}
+.left .leftboard li.border5{height:50px;  width: 110px;  display:block;padding:20px 0 0 100px;}
+.left .leftboard li.border5clicked{height:50px;  width: 110px;  display:block;padding:20px 0 0 100px;}
+.left .leftboard li.border5clicked a{color: black; display:block;font-size:16px;color:rgb(0, 225, 255);position: relative;}
+.left .leftboard li.border2clicked{height:50px;  width: 110px;  display:block;padding:30px 0 0 100px;}
+.left .leftboard li a{color: black; display:block;font-size:16px;position: relative;}
+.left .leftboard li.border2clicked a{color: black; display:block;font-size:16px;color:rgb(0, 225, 255);position: relative;}
+.left .leftboard li.border1 .inner{color:grey; display:block;font-size:12px;position: relative;}
+.left .leftboard li.border1 .inner:hover{ border:none; color:#ff4500; text-decoration: none;}
 .projects {
 	background-color: #fff;
 	border-left: 1px solid #e5e5e5;
@@ -129,7 +129,7 @@ rgba(255, 255, 255, .2) 75%, transparent 75%, transparent);
 
 
 }
-.projects .rightBorder .instruct{
+.projects .rightboard .instruct{
 	height:25px;
 	width:950px;
 	
@@ -142,7 +142,7 @@ rgba(255, 255, 255, .2) 75%, transparent 75%, transparent);
 	text-align: justify;
 }
 
-.projects .rightBorder .dishes{
+.projects .rightboard .dishes{
 	height:80px;
 	width:950px;
 	position:relative;  
@@ -155,13 +155,13 @@ rgba(255, 255, 255, .2) 75%, transparent 75%, transparent);
 	
 	text-align: justify;
 }
-.projects .rightBorder .cont{
+.projects .rightboard .cont{
 	height:440px;
 	width: 950px;;
 	/* overflow-x: hidden;
     overflow-y: auto; */
 }
-.projects .rightBorder .dishes #one{
+.projects .rightboard .dishes #one{
 	height:50px;
 	width:110px;
 	border-left:.5px silver solid ;
@@ -171,7 +171,7 @@ rgba(255, 255, 255, .2) 75%, transparent 75%, transparent);
 	text-align: center;
 	font-size: 14px;
 }
-.projects .rightBorder .dishes #two{
+.projects .rightboard .dishes #two{
 	height:63px;
 	width:170px;
 	font-size: 13px;
@@ -181,7 +181,7 @@ rgba(255, 255, 255, .2) 75%, transparent 75%, transparent);
 	text-align: center;
 }
 
-.projects .rightBorder .dishes #three{
+.projects .rightboard .dishes #three{
 	height:50px;
 	width:110px;
 	font-family: Verdana,Tahoma,arial;
@@ -194,7 +194,7 @@ rgba(255, 255, 255, .2) 75%, transparent 75%, transparent);
 	/* text-align: center; */
 }
 
-.projects .rightBorder .dishes #four{
+.projects .rightboard .dishes #four{
 	height:50px;
 	width:80px;
 	font-size: 13px;
@@ -206,7 +206,7 @@ rgba(255, 255, 255, .2) 75%, transparent 75%, transparent);
 	padding: 30px 0 0 10px;
 }
 
-.projects .rightBorder .dishes #five{
+.projects .rightboard .dishes #five{
 	height:50px;
 	width:80px;
 
@@ -217,7 +217,7 @@ rgba(255, 255, 255, .2) 75%, transparent 75%, transparent);
 }
 
 
-.projects .rightBorder .dishes #five .inn{
+.projects .rightboard .dishes #five .inn{
 	height: 20px;
 	width: 90px;
 	background-color: white;
@@ -225,7 +225,7 @@ rgba(255, 255, 255, .2) 75%, transparent 75%, transparent);
 	font-size: 12px;
 	border: black .5px solid;
 }
-.projects .rightBorder .dishes #six .inn{
+.projects .rightboard .dishes #six .inn{
 	height: 20px;
 	width: 90px;
 	background-color: white;
@@ -236,14 +236,14 @@ rgba(255, 255, 255, .2) 75%, transparent 75%, transparent);
 	border: black .5px solid;
 	
 }
-.projects .rightBorder .dishes #five .inn:hover{
+.projects .rightboard .dishes #five .inn:hover{
 	background:crimson;
 	color: white;
 	cursor: pointer;
 	/* border: black .5px solid; */
 	
 }
-.projects .rightBorder .dishes #six .inn:hover{
+.projects .rightboard .dishes #six .inn:hover{
 	background:rgb(255, 238, 1);
 	color: black;
 	cursor: pointer;
@@ -268,7 +268,7 @@ rgba(255, 255, 255, .2) 75%, transparent 75%, transparent);
 	 width:950px;
 
 }
-.projects2 .rightBorder .instruct{
+.projects2 .rightboard .instruct{
 	height:25px;
 	width:950px;
 	
@@ -280,7 +280,7 @@ rgba(255, 255, 255, .2) 75%, transparent 75%, transparent);
 	
 	text-align: justify;
 }
-.projects2 .rightBorder .dishes{
+.projects2 .rightboard .dishes{
 	height:80px;
 	width:950px;
 	position:relative;  
@@ -293,13 +293,13 @@ rgba(255, 255, 255, .2) 75%, transparent 75%, transparent);
 	
 	text-align: justify;
 }
-.projects2 .rightBorder .cont{
+.projects2 .rightboard .cont{
 	height:440px;
 	width: 950px;;
 	/* overflow-x: hidden;
     overflow-y: auto; */
 }
-.projects2 .rightBorder .dishes #one{
+.projects2 .rightboard .dishes #one{
 	height:50px;
 	width:110px;
 	border-left:.5px silver solid ;
@@ -309,7 +309,7 @@ rgba(255, 255, 255, .2) 75%, transparent 75%, transparent);
 	text-align: center;
 	font-size: 14px;
 }
-.projects2 .rightBorder .dishes #two{
+.projects2 .rightboard .dishes #two{
 	height:55px;
 	width:170px;
 	font-size: 13px;
@@ -319,7 +319,7 @@ rgba(255, 255, 255, .2) 75%, transparent 75%, transparent);
 	text-align: center;
 }
 
-.projects2 .rightBorder .dishes #three{
+.projects2 .rightboard .dishes #three{
 	height:50px;
 	width:110px;
 	font-family: Verdana,Tahoma,arial;
@@ -332,7 +332,7 @@ rgba(255, 255, 255, .2) 75%, transparent 75%, transparent);
 	/* text-align: center; */
 }
 
-.projects2 .rightBorder .dishes #four{
+.projects2 .rightboard .dishes #four{
 	height:50px;
 	width:80px;
 	font-size: 13px;
@@ -344,7 +344,7 @@ rgba(255, 255, 255, .2) 75%, transparent 75%, transparent);
 	padding: 30px 0 0 10px;
 }
 
-.projects2 .rightBorder .dishes #five{
+.projects2 .rightboard .dishes #five{
 	height:50px;
 	width:80px;
 
@@ -355,7 +355,7 @@ rgba(255, 255, 255, .2) 75%, transparent 75%, transparent);
 }
 
 
-.projects2 .rightBorder .dishes #five .inn{
+.projects2 .rightboard .dishes #five .inn{
 	height: 20px;
 	width: 90px;
 	background-color: white;
@@ -363,7 +363,7 @@ rgba(255, 255, 255, .2) 75%, transparent 75%, transparent);
 	font-size: 12px;
 	border: black .5px solid;
 }
-.projects2 .rightBorder .dishes #six .inn{
+.projects2 .rightboard .dishes #six .inn{
 	height: 20px;
 	width: 90px;
 	background-color: white;
@@ -374,14 +374,14 @@ rgba(255, 255, 255, .2) 75%, transparent 75%, transparent);
 	border: black .5px solid;
 	
 }
-.projects2 .rightBorder .dishes #five .inn:hover{
+.projects2 .rightboard .dishes #five .inn:hover{
 	background:crimson;
 	color: white;
 	cursor: pointer;
 	/* border: black .5px solid; */
 	
 }
-.projects2 .rightBorder .dishes #six .inn:hover{
+.projects2 .rightboard .dishes #six .inn:hover{
 	background:rgb(255, 238, 1);
 	color: black;
 	cursor: pointer;
@@ -514,7 +514,7 @@ rgba(255, 255, 255, .2) 75%, transparent 75%, transparent);
 	padding: 0;
 	margin: 0;
 	background-color: rgba(0, 0, 0, 0.5);
-	filter: proGid:DXImageTransform.Microsoft.gradient(startColorStr=#88000000,endColorStr=#88000000); }
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorStr=#88000000,endColorStr=#88000000); }
   
   .dialog-section {
 	opacity: 0;
@@ -530,7 +530,7 @@ rgba(255, 255, 255, .2) 75%, transparent 75%, transparent);
 	box-shadow: 0 0 8px rgba(0, 0, 0, 0.5); }
   
   .dialog-body,
-  .dialog-imageList {
+  .dialog-imagelist {
 	box-sizing: content-box;
 	z-index: 1;
 	min-width: 516px;
@@ -540,10 +540,10 @@ rgba(255, 255, 255, .2) 75%, transparent 75%, transparent);
 	margin: 0;
 	overflow: hidden; }
 	.dialog-body.withNoPadding,
-	.dialog-imageList.withNoPadding {
+	.dialog-imagelist.withNoPadding {
 	  padding: 0; }
 	.dialog-body.withNoMinWidth,
-	.dialog-imageList.withNoMinWidth {
+	.dialog-imagelist.withNoMinWidth {
 	  min-width: auto;
 	  min-width: 0; }
   
@@ -563,7 +563,7 @@ rgba(255, 255, 255, .2) 75%, transparent 75%, transparent);
 	width: 36px;
 	height: 36px;
 	overflow: hidden;
-	font: 16px/36px 'simSun';
+	font: 16px/36px 'Simsun';
 	text-align: center;
 	color: #fff !important;
 	cursor: pointer;
@@ -579,7 +579,7 @@ rgba(255, 255, 255, .2) 75%, transparent 75%, transparent);
   .dialog-disabled {
 	cursor: not-allowed;
 	background-color: rgba(0, 0, 0, 0.3);
-	filter: proGid:DXImageTransform.Microsoft.gradient(startColorStr=#44000000,endColorStr=#44000000); }
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorStr=#44000000,endColorStr=#44000000); }
   
   .dialog-header {
 	position: relative;
