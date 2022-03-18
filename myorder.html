@@ -57,3 +57,160 @@
             </ul>
         </div>
     </div>
+
+    <div class="myorder">
+        <h1 class="m" style="color: brown;">My Order</h1>
+    </div>
+
+    <div class="order" style="display: none;">
+        <ul>
+            <li id="menu1" class="orderli">
+                <img src="img/" width="150" height="150" />
+                <span class="food">menu1</span>
+                <span class="num">amount：1</span>
+                <span class="disc">detail menu1</span>
+                <span class="price">$14</span>
+                <button class="del">Delete</button>
+            </li>
+            <li id="menu2">
+                <img src="img/" width="150" height="150" />
+                <span class="food">menu2</span>
+                <span class="num">amount：1</span>
+                <span class="disc">detail menu2</span>
+                <span class="price">$14</span>
+                <button class="del">Delete</button>
+            </li>
+            <li id="menu3">
+                <img src="img/" width="150" height="150" />
+                <span class="food">menu3</span>
+                <span class="num">amount：1</span>
+                <span class="disc">detail menu3</span>
+                <span class="price">$14</span>
+                <button class="del">Delete</button>
+            </li>
+            <li id="menu4">
+                <img src="img/" width="150" height="150" />
+                <span class="food">menu4</span>
+                <span class="num">amount：1</span>
+                <span class="disc">detail menu4</span>
+                <span class="price">$14</span>
+                <button class="del">Delete</button>
+            </li>
+            <li id="menu5">
+                <img src="img/" width="150" height="150" />
+                <span class="food">menu5</span>
+                <span class="num">amount：1</span>
+                <span class="disc">detail menu5</span>
+                <span class="price">$14</span>
+                <button class="del">Delete</button>
+            </li>
+        </ul>
+    </div>
+
+    <div class="order_content" id="first">
+
+    </div>
+
+    <div class="b_add">
+        <a href="index.html"><button class="add">Order Now</button></a>
+    </div>
+
+    <section class="my_model">
+        <p class="title">Delete<span class="closeModel">X</span></p>
+        <p>Are u sure to delete this item?</p>
+        <div class="opBtn">
+            <a href="javascript:;" class="dialog-sure">Yes</a>
+            <a href="javascript:;" class="dialog-close">Close</a>
+        </div>
+    </section>
+
+    <script type="text/javascript">
+        var db = openDatabase('dishes', '1.0', 'Vincent', 30*1024*1024);
+        var dataTable = document.getElementById("first");
+        var dishNames=new Array();
+   
+        showAllData(dataTable);
+        function showData(row,dataTable,i) {
+           console.log(dishNames.indexOf(row.dishName));
+       if(dishNames.indexOf(row.dishName)!=-1)
+      {
+   
+          console.log("repeated");
+      }
+       else{ dishNames.push(row.dishName)
+      
+       var ul=document.createElement("ul");
+       ul.className="order_lists";
+       var li1 = document.getElementById(row.dishName.replace(/(^\s+)|(\s+$)/g,""));
+       ul.appendChild(li1);
+       dataTable.appendChild(ul);
+       console.log(dataTable)
+       }
+       }
+       function showAllData(dataTable) {
+       db.transaction(function(tx) {
+           tx.executeSql("CREATE TABLE IF NOT EXISTS Order (picName TEXT,dishName TEXT,dishDisc TEXT,disPrice TEXT,dishNum TEXT)", []);
+           tx.executeSql("SELECT * FROM Order  ", [], function(tx, rs) {
+               
+               for(var i = 0; i < rs.rows.length; i++) {
+                   showData(rs.rows.item(i),dataTable,i)
+               }
+           })
+       })
+       }
+   
+       var $order_lists = null;
+       var $order_content = '';
+       var namer;
+       
+       $('.del').click(function () {
+           $order_lists = $(this).parents('.order_lists');
+           $order_content = $order_lists.parents('.order_content');
+           namer= $(this).parents('.order_lists').find('.food').html();
+          // name=namer.split(">")[1].split("<")[0]
+           console.log(name.length)
+           
+           $('.model_bg').fadeIn(300);
+           $('.my_model').fadeIn(300);
+       });
+      
+   
+       //close frame
+       $('.closeModel').click(function () {
+           closeM();
+       });
+       $('.dialog-close').click(function () {
+           closeM();
+       });
+       function closeM() {
+           $('.model_bg').fadeOut(300);
+           $('.my_model').fadeOut(300);
+       }
+       //confirm to delete item
+       $('.dialog-sure').click(function () {
+           $order_lists.remove();
+           if($order_content.html().trim() == null || $order_content.html().trim().length == 0){
+               //$.order_content.parents('.cartBox').remove();
+               $.sendMsg('none item here!', 1000, function() {
+                   console.log('sendMsg closed');
+               });
+           }
+           closeM();
+           //$sonCheckBox = $('.son_check');
+           //totalMoney();
+           var db = openDatabase('dishes', '1.0', 'Vincent', 30*1024*1024);
+           deleteDish();
+           
+           function deleteDish(dataTable) {
+               db.transaction(function(tx) {
+                   tx.executeSql("CREATE TABLE IF NOT EXISTS Order(picName TEXT,dishName TEXT,dishDisc TEXT,disPrice TEXT,dishNum TEXT)", []);
+                   tx.executeSql("DELETE FROM Order WHERE dishName=(?)", [namer], function(tx, rs) {
+                       
+                      console.log("delete success!")
+                   })
+               })
+           }
+       })
+      </script>
+   </body>
+   </html>
