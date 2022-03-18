@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- JQuery / Materialize CSS + JavaScript imports -->
+    <link rel="manifest" href="resume.webmanifest">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pop-up Restaurant</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+    <meta name="theme-color" content="white" />
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="Resume">
+    <meta name="msapplication-TileImage" content="img/ms144.png">
+    <meta name="msapplication-TileColor" content="#FFFFFF">
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/css/materialize.min.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/js/materialize.min.js"></script>
+    <style>
+        #container {
+            padding-left: 300px;
+        }
+
+        #content {
+            padding: 20px;
+        }
+
+        @media only screen and (max-width : 992px) {
+            #container {
+                padding-left: 0px;
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="nav_bg">
+        <div class="wrap">
+            <ul id="nav" class="nav clearfix">
+                <li class="nLi" style="font-size: 30px;">
+                    <h3 class="e"><a href="#" style="font-size: 23px;">Vincent's Cook</a></h3>
+                </li>
+                <li class="nLi">
+                    <h3 class="d"><a href="index.html">Home</a></h3>
+                </li>
+                <li class="nLi ">
+                    <h3 class="d"><a href="myorder.html">order</a></h3>
+                </li>
+                <li class="nLi ">
+                    <h3 class="d"><a href="order-statistic.html">order-statistic</a></h3>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="left">
+        <div class="left">
+            <ul class="leftborder">
+                <li class="border1">
+                    <a href="myorder.html">
+                        <img src='img/' width=14 height=14 />
+                        <span class="outer">My Order</span>
+                        <br>
+                        <br>
+                        <span class="inner">Recent Order</span>
+                    </a>
+                </li>
+                <li class="border2clicked">
+                    <a href="./today.html">
+                        <img src='img/' width=14 height=14 />
+                        <span class="outer">Today's Menu</span>
+                    </a>
+                </li>
+                <li class="border3">
+                    <a href="./recommend.html">
+                        <img src='img/' width=14 height=14 />
+                        <span class="outer">Recommend</span>
+                    </a>
+                </li>
+                <li class="border4">
+                    <a href="./hot.html">
+                        <img src='img/' width=14 height=14 />
+                        <span class="outer">Hot</span>
+                    </a>
+                </li>
+                <li class="border5">
+                    <a href="./selected.html">
+                        <img src='img/' width=14 height=14 />
+                        <span class="outer">Selected</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
