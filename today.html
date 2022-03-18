@@ -46,14 +46,14 @@
                     <h3 class="e"><a href="#" style="font-size: 23px;">Vincent's Cook</a></h3>
                 </li>
                 <li class="nLi">
-                    <h3 class="d"><a href="index.html">Home</a></h3>
+                    <h3 class="d"><a href="index.html">Menu</a></h3>
                 </li>
                 <li class="nLi ">
-                    <h3 class="d"><a href="myorder.html">order</a></h3>
+                    <h3 class="d"><a href="myorder.html">My Order</a></h3>
                 </li>
-                <li class="nLi ">
-                    <h3 class="d"><a href="order-statistic.html">order-statistic</a></h3>
-                </li>
+                <!--<li class="nLi ">
+                    <h3 class="d"><a href="contact.html">Contact</a></h3>
+                </li>-->
             </ul>
         </div>
     </div>
@@ -96,3 +96,95 @@
                 </li>
             </ul>
         </div>
+
+    </div>
+    <p style="font-size: 16px;  position: absolute; top:8.9%; left:48.5%;text-align: center;"><b>Today's Menu</b></p>
+    <div class="projects">
+        <!-- <br>
+        <p style="font-size: 15px; height: 30px;width:300px;background-color: silver;padding: 0 0 0 20px;text-align: center;" >Today's Menu</p> -->
+        <ul class="rightborder">
+            <!-- <p style="font-size: 16px;  background-color: rgb(251, 255, 0);text-align: center;">Today's Menu</p> -->
+            <li class="instruct">
+              <span style="padding:0px 65px 0 40px;position: relative ;top:25%;"><b>Image</b> </span>
+              <span style="padding:0px 100px 0 0;position: relative ;top:25%;"><b>Name</b> </span>
+              <span style="padding:0px 110px 0 0;position: relative ;top:25%;"><b>Bio</b> </span>
+              <span style="padding:0px 70px 0 30px;position: relative ;top:25%;"><b>Unit Price</b> </span>
+              <span style="padding:0px 100px 0 0;position: relative ;top:25%;"><b>Review</b> </span>
+              <span style="padding:0px 0px 0 0;position: relative ;top:25%;"><b>Action</b></span>
+            </li>
+            <div class="cont">
+                <li class="dishes" id="first">
+                    <img src='img/' width=136px height=80px />
+                    <span id="one">menu1</span>          
+                    <span id="two">details menu1</span>
+                    <span id="three">$14</span>
+                    <span id="four">8 scores</span>
+                    <span id="five">
+                        <button class="inn" id="order1">Order</button>
+                    </span>
+                    <span id="six">
+                            <button class="inn" id="evaluate1">Review</button>
+                    </span>
+                </li>
+                <li class="dishes" id="second">
+                    <img src='img/' width=136px height=80px />
+                    <span id="one">menu2</span>          
+                    <span id="two">details menu2</span>
+                    <span id="three">$14</span>
+                    <span id="four">8 scores</span>
+                    <span id="five">
+                        <button class="inn" id="order1">Order</button>
+                    </span>
+                    <span id="six">
+                            <button class="inn" id="evaluate1">Review</button>
+                    </span>
+                </li>
+                <li class="dishes" id="third">
+                    <img src='img/' width=136px height=80px />
+                    <span id="one">menu4</span>          
+                    <span id="two">details menu4</span>
+                    <span id="three">$14</span>
+                    <span id="four">8 scores</span>
+                    <span id="five">
+                        <button class="inn" id="order1">Order</button>
+                    </span>
+                    <span id="six">
+                            <button class="inn" id="evaluate1">Review</button>
+                    </span>
+                </li>
+                <li class="dishes" id="fourth">
+                    <img src='img/' width=136px height=80px />
+                    <span id="one">menu4</span>          
+                    <span id="two">details menu4</span>
+                    <span id="three">$14</span>
+                    <span id="four">8 scores</span>
+                    <span id="five">
+                        <button class="inn" id="order1">Order</button>
+                    </span>
+                    <span id="six">
+                            <button class="inn" id="evaluate1">Review</button>
+                    </span>
+                </li>
+            </div>
+        </ul>
+    </div>
+    <script src="../js/universial.js">
+        $('.button-collapse').sideNav({
+            menuWidth: 300, // Default is 300
+            edge: 'left', // Choose the horizontal origin
+            closeOnClick: false, // Closes side-nav on <a> clicks, useful for Angular/Meteor
+            draggable: true // Choose whether you can drag to open on touch screens
+        });
+        window.onload = () => {
+            'use strict';
+
+            if ('serviceWorker' in navigator) {
+                navigator.serviceWorker
+                    .register('sw.js');
+            }
+        }
+
+    </script>
+</body>
+
+</html>
